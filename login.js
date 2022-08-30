@@ -9,7 +9,7 @@ loginButton.addEventListener("click", (e) => {
 
     if (username === "admin12" && password === "admin@12345") {
         alert("You have successfully logged in as Admin.");
-        location.replace("/index.html");
+        location.replace("/login.html");
     } else {
         loginErrorMsg.style.opacity = 1;
     }
