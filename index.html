@@ -1,114 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-       
-    <script type="text/javascript">
-        window.history.forward();
-        function noBack() {
-            window.history.forward();
-        }
-    </script>
-</head>
-<body>
-    <header>
-        <nav class="navigation">
-            <div class="top">
-                <img src="https://static.vecteezy.com/system/resources/thumbnails/005/985/929/small/office-logo-design-free-vector.jpg">
-                <h2>ABC EMPLOYEES PORTAL</h2>
-            </div>
-            <div class="links">
-                <ul>
-                    <li><a href="https://github.com/syed-saad-ali-046" target="_blank">DEVELOPER</a></li>
-                    <li><a href="login.html">Log Out</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="line"></div>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Payroll - Admin Login</title>
+    <link rel="stylesheet" href="loginpage.css" />
+  </head>
+  <body>
     <main>
-        <div class="container">
-            <a href="register.html" target="_blank"><img src="https://www.seekpng.com/png/detail/124-1247381_new-employee-icon-people-transparent-background-employee-icon.png"></a>
-            <article><a href="register.html" target="_blank">Register Employees</a></article>
-        </div>
-        <div class="container1">
-            <a href="payroll.html" target="_blank"><img src="https://content.wisestep.com/wp-content/uploads/2014/04/implementing_payroll_system.jpg"></a>
-            <article><a href="payroll.html" target="_blank">PayRoll and Slips</a></article>
-        </div>
-        <div class="container2">
-            <a href="project.html" target="_blank"><img src="https://png.pngtree.com/png-vector/20190521/ourmid/pngtree-gallery-logo-icon-design-template-vector-png-image_1048779.jpg"></a>
-            <article><a href="project.html" target="_blank">Projects and Gallery </a></article>
-        </div>
-        <div class="img-container">
-            <img src="https://media.timeout.com/images/105824238/image.jpg">
-        </div>
-        <div class="line"></div>
-    </main>
-    <footer class="footer-distributed">
 
-        <div class="footer-left">
-
-            <span><img src="https://static.vecteezy.com/system/resources/thumbnails/005/985/929/small/office-logo-design-free-vector.jpg"class="for-img"></span>
-
-            <p class="footer-links">
-                <a href="#" class="link-1">Home</a>
-                
-                <a href="register.html" target="_blank">Register Employees</a>
-            
-                <a href="payroll.html" target="_blank">PaySlips and Roll</a>
-            
-                <a href="project.html" target="_blank">Gallery</a>
-                
-            </p>
-
-            <p class="footer-company-name">ABC-EMPLOYEE COMPANY © 2022</p>
-        </div>
-
-        <div class="footer-center">
-
-            <div>
-                <i class="fa fa-map-marker"></i>
-                <p><span>Gulshan-e-Iqbal</span>Karachi</p>
-            </div>
-
-            <div>
-                <i class="fa fa-phone"></i>
-                <p>+923343734182</p>
-            </div>
-
-            <div>
-                <i class="fa fa-envelope"></i>
-                <p><a href="mailto:support@company.com">support@ABC-EMPLOYEE.com</a></p>
-            </div>
-
-        </div>
-
-        <div class="footer-right">
-
-            <p class="footer-company-about">
-                <span>About the company</span>
-                ABC-EMPLOYEE Company is formed on 2010 with a goal to create problem solving solutions and to deal other market problems
-            </p>
-
-            <div class="footer-icons">
-
-                <a href="https://www.facebook.com/profile.php?id=100009223156121" target="_blank"><i class="fa fa-facebook"></i></a>
-                <a href="https://twitter.com/home"><i class="fa fa-twitter" target="_blank"></i></a>
-                <a href="inkedin.com/in/syed-saad-ali-48a482219/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/syed-saad-ali-046"  target="_blank"><i class="fa fa-github"></i></a>
-
-            </div>
-
+      <main id="main-holder">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/005/985/929/small/office-logo-design-free-vector.jpg">
+        <h1 id="login-header">Login</h1>
+        
+        <div id="login-error-msg-holder">
+          <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
         </div>
         
-
-    </footer>
-    <div class="lined"></div>
-    
-</body>
+        <form id="login-form">
+          <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+          <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+          <input type="submit" value="Login" id="login-form-submit">
+        </form>
+    </main>
+   
+    <script type="module" src="login.js"></script>
+  </body>
 </html>
+
