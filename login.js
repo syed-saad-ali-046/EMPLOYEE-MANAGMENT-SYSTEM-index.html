@@ -9,7 +9,7 @@ loginButton.addEventListener("click", (e) => {
 
     if (username === "admin12" && password === "admin@12345") {
         alert("You have successfully logged in as Admin.");
-        location.replace("/login.html");
+        window.location.replace("https://www.tutorialrepublic.com/");
     } else {
         loginErrorMsg.style.opacity = 1;
     }
