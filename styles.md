@@ -1,0 +1,8 @@
+colors{
+ white=#FEFFFF
+ SEE GREEN=#3AAFA9
+ CONTRAST BLACK=#17252A
+ VERY LIGHT SEE=#DEF2F1
+ MID SEE=#2B7A78
+ "background-color: #168b84;
+}

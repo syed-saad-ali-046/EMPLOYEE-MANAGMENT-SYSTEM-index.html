@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayRoll and Slips</title>
+    <link rel="stylesheet" href="payroll.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/js/bootstrap.min.js" integrity="sha512-mp3VeMpuFKbgxm/XMUU4QQUcJX4AZfV5esgX72JQr7H7zWusV6lLP1S78wZnX2z9dwvywil1VHkHZAqfGOW7Nw==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/css/bootstrap.min.css" integrity="sha512-N415hCJJdJx+1UBfULt+i+ihvOn42V/kOjOpp1UTh4CZ70Hx5bDlKryWaqEKfY/8EYOu/C2MuyaluJryK1Lb5Q==" crossorigin="anonymous" />
+  
+</head>
+<body>
+  <header>
+    <div class="locks">
+      <a href="index.html" target="_blank">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/005/985/929/small/office-logo-design-free-vector.jpg" alt="Home">
+
+    </a>
+    </div>
+    <div class="head"><span><a href="index.html">ABC EMPLOYEES PORTAL</a></span></div>
+    
+   <div class="line"></div>
+  </header>
+
+  <h3 class="emp"> EMPLOYEES PAY ROLL</h3>
+  <table>
+   
+    <tr>
+      <th>Name</th>
+      <th>Hourly Rate(Rs.)</th>
+      <th>No.of Hours</th>
+      <th>Monthly Salary</th>
+    </tr>
+    
+    <tr id="t1">
+      <td>Saleem shaka</td>
+      <td >80</td>
+      <td >8</td>
+    </tr>
+    <tr id ="t2">
+      <td>Asma Khan</td>
+      <td>450</td>
+      <td>6</td>
+    </tr>
+    <tr id="t3">
+      <td>Hassam Shewaz</td>
+      <td>245</td>
+      <td>8</td>
+    </tr>
+    <tr id="t4">
+      <td>Malik Feroz</td>
+      <td>545</td>
+      <td>8</td>
+    </tr>
+    <tr id="t5">
+      <td>Ahmed Feroz</td>
+      <td>200</td>
+      <td>8</td>
+    </tr>
+    <tr id="t6">
+      <td>Sameed Fayyyaz</td>
+      <td>500</td>
+      <td>8</td>
+    </tr>
+    <tr id="t7">
+      <td>Kareem Baksh</td>
+      <td>700</td>
+      <td>8</td>
+    </tr>
+    <tr id="t8">
+      <td>Ali Ahmed</td>
+      <td>30</td>
+      <td>8</td>
+    </tr>
+    <tr id="t9">
+      <td>Mufasir</td>
+      <td>380</td>
+      <td>8</td>
+    </tr>
+    <tr id="t10">
+      <td>Ahsan Shareef</td>
+      <td>355</td>
+      <td>6</td>
+    </tr>
+    </tr>
+  </table>
+  <main>
+    <div class="heading">
+      <h2>Salary Slip Generator</h2>
+      </div>
+      <div class="infoentry">
+      <form>
+      <table>
+      <tr>
+      <th>
+      <label for="eid">Employee_Id:</label>
+      </th>
+      <td><input type="number" name="eno" id="no"/></td>
+      </tr>
+      <tr>
+      <th>
+      <label for="enm">Employee_name:</label>
+      </th>
+      <td><input type="text" name="ename" id="empnm" /></td>
+      </tr>
+      <tr>
+      <th>
+      <label for="desi">Designation:</label>
+      </th>
+      <td><input type="text" name="desig" id="des" /></td>
+      </tr>
+      <tr>
+      <th>
+      <label for="departmnt">Department:</label>
+      </th>
+      <td><input type="text" name="depart" id="dp" /></td>
+      </tr>
+      <tr>
+      <th>
+      <label for="">Experience:</label>
+      </th>
+      <td><input type="number" name="exp" id="exps" /></td>
+      </tr>
+      <tr>
+      <th>
+      <label for="totday">Total Days:</label>
+      </th>
+      <td><input type="number" name="totalday" value="26" id="tday" /></td>
+      </tr>
+      <tr>
+      <th>
+      <label for="pd">Present Days:</label>
+      </th>
+      <td><input type="number" name="pday" id="pd" /></td>
+      </tr>
+      <tr>
+      <th>
+      <label for="anualsal">Annual Salary:</label>
+      </th>
+      <td><input type="number" name="ansal" id="annualsal" /></td>
+      </tr>
+      <tr>
+      <th>
+      <label for="otday">OT days:</label>
+      </th>
+      <td>
+      <input type="number" name="otd" id="ot">
+      <small>800 rs. per day</small>
+      </td>
+      </tr>
+      <tr>
+      <th>
+      <label for="bank">Bank:</label>
+      </th>
+      <td><input type="text" name="banknm" id="bnm" /></td>
+      </tr>
+      <tr>
+      <th>
+      <label for="banka/c">Bank A/C:</label>
+      </th>
+      <td><input type="text" name="bacc" id="bacnt" /></td>
+      </tr>
+      <tr>
+      <th>
+      <label for="bank">PF A/C:</label>
+      </th>
+      <td><input type="text" name="pfac" id="pf" /></td>
+      </tr>
+      <tr>
+      <th>
+      <label for="paydate">Date of Paying:</label>
+      </th>
+      <td><input type="date" name="dpay" id="pdate" /></td>
+      </tr>
+      <tr>
+      <th>
+      <label for="mon">Month of Paying:</label>
+      </th>
+      <td><input type="month" name="mpay" id="mdate" /></td>
+      </tr>
+      <tr>
+      <td>
+      <input type="button" name="calc" value="Generate pay slip" id="cal" onClick="calculate()"/>
+      </td>
+      <td>
+      <input type="reset" name="calc" value="CLEAR" id="cal"/>
+      </td>
+      </tr>
+      </table>
+      </form>
+      </div>
+      <div class="salaryslip">
+      <div id="company">
+      <h2>ABC EMPLOYEE COMPANY</h2>
+      <pre>
+      Gulshan-e-Iqbal
+      Karachi,Pakistan
+      23135
+      </pre>
+      </div>
+      <table id="slip" border="1" frame="void" rules="all">
+      <tr>
+      <th>
+      <h3>Pay slip for </h3>
+      </th>
+      <td>
+      <h3 id="paymonth"></h3>
+      </td>
+      </tr>
+      <tr>
+      <th>Employee id</th>
+      <td><p id="empid"></p></td>
+      <th>Employee Name</th>
+      <td><p id="name"></p></td>
+      </tr>
+      <tr>
+      <th>Department</th>
+      <td><p id="dep"></p></td>
+      <th>Designation</th>
+      <td><p id="designation"></p>
+      </td>
+      </tr>
+      <tr>
+      <th>Bank name</th>
+      <td><p id="bankname"></p></td>
+      <th>Paying date</th>
+      <td><p id="pdt"></p>
+      </td>
+      </tr>
+      <tr>
+      <th>Bank A/C no.</th>
+      <td><p id="bano"></td>
+      <th>PF A/C no.</th>
+      <td><p id="pfano"></p>
+      </td>
+      </tr>
+      <tr>
+      <th>Earnings</th>
+      <th>Amount (Rs.)</th>
+      <th>Deduction</th>
+      <th>Amount (Rs.)</th>
+      </tr>
+      <tr>
+      <th>Basic</th>
+      <td><p id="basicsal"></p></td>
+      <th>Provident fund(PF)</th>
+      <td><p id="pfamt"></p></td>
+      </tr>
+      <tr>
+      <th>House Rent Allowence</th>
+      <td><p id="hrent"></p></td>
+      <th>Income Tax</th>
+      <td><p id="itamt"></p></td>
+      </tr>
+      <tr>
+      <th>Conveyance</th>
+      <td><p id="convey"></p></td>
+      <th>Employee Insurance</th>
+      <td><p id="empins"></p></td>
+      </tr>
+      <tr>
+      <th>Over Time</th>
+      <td><p id="otamt"></p></td>
+      <th>Leave Deduction</th>
+      <td><p id="lvded"></td>
+      </tr>
+      <tr>
+      <th>Medical Allowance</th>
+      <td><p id="medallow"></p></td>
+      </tr>
+      <tr>
+      <th>Food Allowance</th>
+      <td><p id="foodallow"></p></td>
+      </tr>
+      <tr>
+      <th>Special Allowance</th>
+      <td><p id="specallow"></p></td>
+      </tr>
+      <tr>
+      <th>Gross Salary</th>
+      <td><h3 id="grosssal"></h3></td>
+      <th>Total Dedution</th>
+      <td><h3 id="totded"></h3></td>
+      </tr>
+      <tr>
+      <th><h1>Net Salary</h1></th>
+      <td><h2 id="netsal"></h2></td>
+      </tr>
+      </table>
+      </div>
+  </main>
+  
+  <script src="payroll.js"></script>
+</body>
+</html>
