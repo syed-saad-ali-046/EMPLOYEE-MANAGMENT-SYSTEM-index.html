@@ -70,6 +70,7 @@ body{
 }
 .container>article>a{
     text-decoration: none;
+    color: #FEFFFF;
 
 }
 .container>article{
@@ -98,6 +99,7 @@ body{
 }
 .container1>article>a{
     text-decoration: none;
+    color: #FEFFFF;
 }
 .container1>article{
     font-family: serif,sans-serif;
@@ -124,6 +126,7 @@ body{
 }
 .container2>article>a{
     text-decoration: none;
+    color: #FEFFFF;
 }
 .container2>article{
     font-family: serif,sans-serif;
